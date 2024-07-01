@@ -1,0 +1,40 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Transmission started
+Time=25000: wdata=00000000, wvalid=1, wready=0, wlast=0, top.slave.write_pointer=0000, top.master.data_counter=00000000000000000000000000000000 
+Time=35000: wdata=00000000, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0000, top.master.data_counter=00000000000000000000000000000000 
+Time=45000: wdata=00000001, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0001, top.master.data_counter=00000000000000000000000000000001 
+Time=55000: wdata=00000002, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0010, top.master.data_counter=00000000000000000000000000000010 
+Time=65000: wdata=00000003, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0011, top.master.data_counter=00000000000000000000000000000011 
+Time=75000: wdata=00000004, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0100, top.master.data_counter=00000000000000000000000000000100 
+Time=85000: wdata=00000005, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0101, top.master.data_counter=00000000000000000000000000000101 
+Time=95000: wdata=00000006, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0110, top.master.data_counter=00000000000000000000000000000110 
+Time=105000: wdata=00000007, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0111, top.master.data_counter=00000000000000000000000000000111 
+Time=115000: wdata=00000008, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1000, top.master.data_counter=00000000000000000000000000001000 
+Time=125000: wdata=00000009, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1001, top.master.data_counter=00000000000000000000000000001001 
+Time=135000: wdata=0000000a, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1010, top.master.data_counter=00000000000000000000000000001010 
+Time=145000: wdata=0000000b, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1011, top.master.data_counter=00000000000000000000000000001011 
+Time=155000: wdata=0000000c, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1100, top.master.data_counter=00000000000000000000000000001100 
+Time=165000: wdata=0000000d, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1101, top.master.data_counter=00000000000000000000000000001101 
+Time=175000: wdata=0000000e, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1110, top.master.data_counter=00000000000000000000000000001110 
+Time=195000: wdata=00000010, wvalid=1, wready=1, wlast=1, top.slave.write_pointer=0000, top.master.data_counter=00000000000000000000000000010000 
+Transmission completed
+Memory[0] = 00000000
+Memory[1] = 00000001
+Memory[2] = 00000002
+Memory[3] = 00000003
+Memory[4] = 00000004
+Memory[5] = 00000005
+Memory[6] = 00000006
+Memory[7] = 00000007
+Memory[8] = 00000008
+Memory[9] = 00000009
+Memory[10] = 0000000a
+Memory[11] = 0000000b
+Memory[12] = 0000000c
+Memory[13] = 0000000d
+Memory[14] = 0000000e
+Memory[15] = 0000000f
+Error: Data mismatch: expected 0, got 00000010
+Time: 195 ns  Iteration: 0  Process: /tb_AXI_stream_top/Always45_7  File: C:/ZNTC/AXI_stream/AXI_stream.srcs/sim_1/new/tb_AXI_stream_top.sv
+$finish called at time : 295 ns : File "C:/ZNTC/AXI_stream/AXI_stream.srcs/sim_1/new/tb_AXI_stream_top.sv" Line 42

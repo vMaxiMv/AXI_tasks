@@ -18,7 +18,7 @@ module AXI_stream_master (
     always_ff @(posedge clk or negedge rst) begin
         if (!rst) begin
             state <= IDLE;
-            data_counter <= 32'b0;
+            data_counter <= 32'b0;  
         end else begin
             state <= next_state;
             if (state == SEND && wready) begin
