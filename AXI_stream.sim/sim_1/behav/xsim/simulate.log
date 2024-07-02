@@ -1,24 +1,75 @@
 Vivado Simulator 2019.2
 Time resolution is 1 ps
-Transmission started
-Time=25000: wdata=00000000, wvalid=1, wready=0, wlast=0, top.slave.write_pointer=0000, top.master.data_counter=00000000000000000000000000000000 
-Time=35000: wdata=00000000, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0000, top.master.data_counter=00000000000000000000000000000000 
-Time=45000: wdata=00000001, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0001, top.master.data_counter=00000000000000000000000000000001 
-Time=55000: wdata=00000002, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0010, top.master.data_counter=00000000000000000000000000000010 
-Time=65000: wdata=00000003, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0011, top.master.data_counter=00000000000000000000000000000011 
-Time=75000: wdata=00000004, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0100, top.master.data_counter=00000000000000000000000000000100 
-Time=85000: wdata=00000005, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0101, top.master.data_counter=00000000000000000000000000000101 
-Time=95000: wdata=00000006, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0110, top.master.data_counter=00000000000000000000000000000110 
-Time=105000: wdata=00000007, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=0111, top.master.data_counter=00000000000000000000000000000111 
-Time=115000: wdata=00000008, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1000, top.master.data_counter=00000000000000000000000000001000 
-Time=125000: wdata=00000009, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1001, top.master.data_counter=00000000000000000000000000001001 
-Time=135000: wdata=0000000a, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1010, top.master.data_counter=00000000000000000000000000001010 
-Time=145000: wdata=0000000b, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1011, top.master.data_counter=00000000000000000000000000001011 
-Time=155000: wdata=0000000c, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1100, top.master.data_counter=00000000000000000000000000001100 
-Time=165000: wdata=0000000d, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1101, top.master.data_counter=00000000000000000000000000001101 
-Time=175000: wdata=0000000e, wvalid=1, wready=1, wlast=0, top.slave.write_pointer=1110, top.master.data_counter=00000000000000000000000000001110 
-Time=195000: wdata=00000010, wvalid=1, wready=1, wlast=1, top.slave.write_pointer=0000, top.master.data_counter=00000000000000000000000000010000 
-Transmission completed
+Write transmission started
+Time=25000: wdata=00000000, wvalid=1, wready=0, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=00000
+Time=35000: wdata=00000000, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=00000
+Write successful: data=00000000, write_pointer=0
+Time=45000: wdata=00000001, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=0001, top.slave.read_pointer=00000
+Write successful: data=00000001, write_pointer=1
+Time=55000: wdata=00000002, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=0010, top.slave.read_pointer=00000
+Write successful: data=00000002, write_pointer=2
+Time=65000: wdata=00000003, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=0011, top.slave.read_pointer=00000
+Write successful: data=00000003, write_pointer=3
+Time=75000: wdata=00000004, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=0100, top.slave.read_pointer=00000
+Write successful: data=00000004, write_pointer=4
+Time=85000: wdata=00000005, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=0101, top.slave.read_pointer=00000
+Write successful: data=00000005, write_pointer=5
+Time=95000: wdata=00000006, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=0110, top.slave.read_pointer=00000
+Write successful: data=00000006, write_pointer=6
+Time=105000: wdata=00000007, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=0111, top.slave.read_pointer=00000
+Write successful: data=00000007, write_pointer=7
+Time=115000: wdata=00000008, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=1000, top.slave.read_pointer=00000
+Write successful: data=00000008, write_pointer=8
+Time=125000: wdata=00000009, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=1001, top.slave.read_pointer=00000
+Write successful: data=00000009, write_pointer=9
+Time=135000: wdata=0000000a, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=1010, top.slave.read_pointer=00000
+Write successful: data=0000000a, write_pointer=a
+Time=145000: wdata=0000000b, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=1011, top.slave.read_pointer=00000
+Write successful: data=0000000b, write_pointer=b
+Time=155000: wdata=0000000c, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=1100, top.slave.read_pointer=00000
+Write successful: data=0000000c, write_pointer=c
+Time=165000: wdata=0000000d, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=1101, top.slave.read_pointer=00000
+Write successful: data=0000000d, write_pointer=d
+Time=175000: wdata=0000000e, wvalid=1, wready=1, wlast=0, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=1110, top.slave.read_pointer=00000
+Write successful: data=0000000e, write_pointer=e
+Time=185000: wdata=0000000f, wvalid=1, wready=1, wlast=1, rdata=00000000, rvalid=0, rready=0, rlast=0, top.slave.write_pointer=1111, top.slave.read_pointer=00000
+Write transmission completed
+Write successful: data=0000000f, write_pointer=f
+Read transmission started
+Time=215000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=00000000, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=00000
+Read successful: data=00000000, read_pointer=00
+Time=225000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=00000001, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=00001
+Read successful: data=00000001, read_pointer=01
+Time=235000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=00000002, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=00010
+Read successful: data=00000002, read_pointer=02
+Time=245000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=00000003, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=00011
+Read successful: data=00000003, read_pointer=03
+Time=255000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=00000004, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=00100
+Read successful: data=00000004, read_pointer=04
+Time=265000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=00000005, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=00101
+Read successful: data=00000005, read_pointer=05
+Time=275000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=00000006, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=00110
+Read successful: data=00000006, read_pointer=06
+Time=285000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=00000007, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=00111
+Read successful: data=00000007, read_pointer=07
+Time=295000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=00000008, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=01000
+Read successful: data=00000008, read_pointer=08
+Time=305000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=00000009, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=01001
+Read successful: data=00000009, read_pointer=09
+Time=315000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=0000000a, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=01010
+Read successful: data=0000000a, read_pointer=0a
+Time=325000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=0000000b, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=01011
+Read successful: data=0000000b, read_pointer=0b
+Time=335000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=0000000c, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=01100
+Read successful: data=0000000c, read_pointer=0c
+Time=345000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=0000000d, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=01101
+Read successful: data=0000000d, read_pointer=0d
+Time=355000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=0000000e, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=01110
+Read successful: data=0000000e, read_pointer=0e
+Time=365000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=0000000f, rvalid=1, rready=1, rlast=0, top.slave.write_pointer=0000, top.slave.read_pointer=01111
+Read successful: data=0000000f, read_pointer=0f
+Time=375000: wdata=00000000, wvalid=0, wready=0, wlast=0, rdata=xxxxxxxx, rvalid=0, rready=1, rlast=1, top.slave.write_pointer=0000, top.slave.read_pointer=10000
+Read transmission completed
 Memory[0] = 00000000
 Memory[1] = 00000001
 Memory[2] = 00000002
@@ -35,6 +86,4 @@ Memory[12] = 0000000c
 Memory[13] = 0000000d
 Memory[14] = 0000000e
 Memory[15] = 0000000f
-Error: Data mismatch: expected 0, got 00000010
-Time: 195 ns  Iteration: 0  Process: /tb_AXI_stream_top/Always45_7  File: C:/ZNTC/AXI_stream/AXI_stream.srcs/sim_1/new/tb_AXI_stream_top.sv
-$finish called at time : 295 ns : File "C:/ZNTC/AXI_stream/AXI_stream.srcs/sim_1/new/tb_AXI_stream_top.sv" Line 42
+$finish called at time : 475 ns : File "C:/ZNTC/AXI_stream/AXI_stream.srcs/sim_1/new/tb_AXI_stream_top.sv" Line 54

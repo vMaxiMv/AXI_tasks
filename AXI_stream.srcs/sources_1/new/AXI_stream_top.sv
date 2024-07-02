@@ -8,13 +8,22 @@ module AXI_stream_top(
     logic wready;
     logic wlast;
     
+    logic [31:0] rdata;
+    logic rvalid;
+    logic rready;
+    logic rlast;
+    
      AXI_stream_master master (
         .clk(clk),
         .rst(rst),
         .wdata(wdata),
         .wvalid(wvalid),
         .wready(wready),
-        .wlast(wlast)
+        .wlast(wlast),
+        .rdata(rdata),
+        .rvalid(rvalid),
+        .rready(rready),
+        .rlast(rlast)
     );
     
     AXI_stream_slave slave (
@@ -23,7 +32,11 @@ module AXI_stream_top(
         .wdata(wdata),
         .wvalid(wvalid),
         .wready(wready),
-        .wlast(wlast)
+        .wlast(wlast),
+        .rdata(rdata),
+        .rvalid(rvalid),
+        .rready(rready),
+        .rlast(rlast)
     );
 endmodule
 

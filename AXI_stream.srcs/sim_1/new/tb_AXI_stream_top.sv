@@ -11,8 +11,8 @@ module tb_AXI_stream_top;
     always #5 clk = ~clk;
 
      task monitor_signals;
-        $display("Time=%0t: wdata=%h, wvalid=%b, wready=%b, wlast=%b, top.slave.write_pointer=%b, top.master.data_counter=%b", 
-                 $time, top.wdata, top.wvalid, top.wready, top.wlast, top.slave.write_pointer,top.master.data_counter,);
+        $display("Time=%0t: wdata=%h, wvalid=%b, wready=%b, wlast=%b, rdata=%h, rvalid=%b, rready=%b, rlast=%b, top.slave.write_pointer=%b, top.slave.read_pointer=%b", 
+                 $time, top.wdata, top.wvalid, top.wready, top.wlast, top.rdata, top.rvalid, top.rready, top.rlast, top.slave.write_pointer, top.slave.read_pointer);
     endtask
     
      initial begin
@@ -22,7 +22,7 @@ module tb_AXI_stream_top;
         #10 rst = 1;
         
         wait(top.wvalid);
-        $display("Transmission started");
+        $display("Write transmission started");
 
         repeat(16) begin
             @(posedge clk);
@@ -32,7 +32,19 @@ module tb_AXI_stream_top;
          wait(top.wlast);
         @(posedge clk);
         monitor_signals();
-        $display("Transmission completed");
+        $display("Write transmission completed");
+        
+        wait(top.rvalid);
+        $display("Read transmission started");
+        repeat(16) begin
+            @(posedge clk);
+            monitor_signals();
+        end
+        
+        wait(top.rlast);
+        @(posedge clk);
+        monitor_signals();
+        $display("Read transmission completed");
 
         for (int i = 0; i < 16; i++) begin
             $display("Memory[%0d] = %h", i, top.slave.memory[i]);
@@ -44,8 +56,19 @@ module tb_AXI_stream_top;
     
     always @(posedge clk) begin
         if (top.wvalid && top.wready) begin
-            assert(top.wdata == top.slave.write_pointer)
-            else $error("Data unsuccess: expected %h, got %h", top.slave.write_pointer, top.wdata);
+            if (top.wdata == top.slave.write_pointer) begin
+                $display("Write successful: data=%h, write_pointer=%h", top.wdata, top.slave.write_pointer);
+            end else begin
+                $error("Data mismatch: expected %h, got %h", top.slave.write_pointer, top.wdata);
+            end
+        end
+        
+         if (top.rvalid && top.rready) begin
+            if (top.rdata == top.slave.read_pointer) begin
+                $display("Read successful: data=%h, read_pointer=%h", top.rdata, top.slave.read_pointer);
+            end else begin
+                $error("Read data mismatch: expected %h, got %h", top.slave.read_pointer, top.rdata);
+            end
         end
     end
 
